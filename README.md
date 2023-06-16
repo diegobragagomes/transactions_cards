@@ -29,30 +29,72 @@ Essa é uma arquitetura simples, mas cumpre o objetivo de se trabalhar quase int
 
 ## Entendimento e Processamento dos Dados
 
-Esse case consiste em uma tabela única com 23 colunas, todas do tipo string, sendo:<br>
-    <li> trip_id : o ID da viagem </li>
-    <li> year : ano que ocorreu a determinada viagem </li>
-    <li> month : mês que ocorreu a determinada viagem </li>
-    <li> week: semana que ocorreu a determinada viagem </li>
-    <li> day: dia que ocorreu a determinada viagem </li>
-    <li> hour : hora que ocorreu a determinada viagem </li>
-    <li> user_type: tipo de cadastro do usuário </li>
-    <li> gender: gênero do usuário </li>
-    <li> starttime: horário de início da viagem </li>
-    <li> stoptime: horário de finalização da viagem </li>
-    <li> tripduration: duração da viagem </li>
-    <li> temperature: temperatura, em Fahrenheit, no momento da viagem </li>
-    <li> events: tempo (clima) no momento da viagem </li>
-    <li> from_station_id: ID da estação de origem </li>
-    <li> from_station_name: nome da estação de origem</li>
-    <li> latitude_start: latitude de origem </li>
-    <li> longitude_start: longitude de origem </li>
-    <li> dpcapacity_start: número de espaços para as bicicletas em cada estação de origem </li>
-    <li> to_station_id: ID da estação de chegada </li>
-    <li> to_station_name: nome da estação de chegada</li>
-    <li> latitude_end: latitude de chegada </li>
-    <li> longitude_end: longitude de chegada </li>
-    <li> dpcapacity_end: número de espaços para as bicicletas em cada estação de chegada</li><br>
+Esse case consiste em <b>4 tabelas</b>, todas do tipo string, sendo:<br>
+
+sd254_cards:<br>
+    <li> User : ID do usuário </li>
+    <li> CARD INDEX : ID do cartão </li>
+    <li> Card Brand : Bandeira do cartão </li>
+    <li> Card Type: Tipo do cartão </li>
+    <li> Card Number: Número do cartão </li>
+    <li> Expires : Data em que o cartão expira </li>
+    <li> CVV: Código de Segurança </li>
+    <li> Has Chip: Valor binário para saber se o cartão tem chip ou não </li>
+    <li> Cards Issued: Problemas com os cartões </li>
+    <li> Credit Limit: Limite de Crédito </li>
+    <li> Acct Open Date: Data de abertura da conta </li>
+    <li> Year PIN last Changed: Ano em que o cartão foi trocado pela última vez </li>
+    <li> Card on Dark Web: Se o cartão foi usado na Dark Web </li><br><br>
+    
+sd254_users:<br>
+    <li> User_Index : ID do usuário </li>
+    <li> Person : Nome do usuário </li>
+    <li> Current Age : Idade Atual </li>
+    <li> Retirement Age: Idade para se aposentar </li>
+    <li> Birth Year: Ano de Nascimento </li>
+    <li> Birth Month : Mês de Nascimento </li>
+    <li> Gender: Gênero </li>
+    <li> Address: Endereço </li>
+    <li> Apartment: Número do Apartamento </li>
+    <li> City: Cidade </li>
+    <li> State: Estado </li>
+    <li> Zipcode: CEP </li>
+    <li> Latitude: Latitude </li>
+    <li> Longitude: Longitude </li>
+    <li> Per Capita Income - Zipcode: Renda per Capita na Região </li>
+    <li> Yearly Income - Person: Renda Anual do usuário </li>
+    <li> Total Debt: Dívida Total</li>
+    <li> FICO Score: Score do usuário na Instituição Financeira </li>
+    <li> Num Credit Cards: Número de cartões que o usuário possuiu ao longo dos anos </li><br><br>
+    
+cpi_index:<br>
+    <li> Year : Ano </li>
+    <li> Month : Mês</li>
+    <li> CPI_Index : Índice, onde 2015 = 100 </li>
+
+credit_card_transactions-ibm_v2:<br>
+    <li> User_Index : ID do usuário </li>
+    <li> Person : Nome do usuário </li>
+    <li> Current Age : Idade Atual </li>
+    <li> Retirement Age: Idade para se aposentar </li>
+    <li> Birth Year: Ano de Nascimento </li>
+    <li> Birth Month : Mês de Nascimento </li>
+    <li> Gender: Gênero </li>
+    <li> Address: Endereço </li>
+    <li> Apartment: Número do Apartamento </li>
+    <li> City: Cidade </li>
+    <li> State: Estado </li>
+    <li> Zipcode: CEP </li>
+    <li> Latitude: Latitude </li>
+    <li> Longitude: Longitude </li>
+    <li> Per Capita Income - Zipcode: Renda per Capita na Região </li>
+    <li> Yearly Income - Person: Renda Anual do usuário </li>
+    <li> Total Debt: Dívida Total</li>
+    <li> FICO Score: Score do usuário na Instituição Financeira </li>
+    <li> Num Credit Cards: Número de cartões que o usuário possuiu ao longo dos anos </li><br><br>
+    
+   
+   
 
 Sabendo-se disso, a arquivo .csv, localizado no bucket Raw, foi processado no <b>EMR</b>, utilizando <b>Pyspark</b>, no Jupyter Notebook.<br>
 
