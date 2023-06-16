@@ -74,24 +74,20 @@ cpi_index:<br>
 
 credit_card_transactions-ibm_v2:<br>
     <li> User_Index : ID do usuário </li>
-    <li> Person : Nome do usuário </li>
-    <li> Current Age : Idade Atual </li>
-    <li> Retirement Age: Idade para se aposentar </li>
-    <li> Birth Year: Ano de Nascimento </li>
+    <li> Card_User : ID do cartão </li>
+    <li> Year : Ano da Transação </li>
+    <li> Month: Mês da Transação </li>
+    <li> Day: Dia da Transação </li>
     <li> Birth Month : Mês de Nascimento </li>
-    <li> Gender: Gênero </li>
-    <li> Address: Endereço </li>
-    <li> Apartment: Número do Apartamento </li>
-    <li> City: Cidade </li>
-    <li> State: Estado </li>
-    <li> Zipcode: CEP </li>
-    <li> Latitude: Latitude </li>
-    <li> Longitude: Longitude </li>
-    <li> Per Capita Income - Zipcode: Renda per Capita na Região </li>
-    <li> Yearly Income - Person: Renda Anual do usuário </li>
-    <li> Total Debt: Dívida Total</li>
-    <li> FICO Score: Score do usuário na Instituição Financeira </li>
-    <li> Num Credit Cards: Número de cartões que o usuário possuiu ao longo dos anos </li><br>
+    <li> Time: Horário da Transação </li>
+    <li> Amount: Quantia envolvida na transação </li>
+    <li> Use Chip: De que maneira o cartão passou na máquina </li>
+    <li> Merchant Name: Código do Estabelecimento</li>
+    <li> Merchant City: Cidade do Estabelecimento </li>
+    <li> Merchant State: Estado do Estabelecimento </li>
+    <li> Zip: CEP do Estabelecimento </li>
+    <li> MCC: Código de classificação do tipo de serviço ou produto que o estabelecimento oferece </li>
+    <li> Is Fraud: Indicador Binário se foi fraude ou não </li><br>
     
    
 Sabendo-se disso, a arquivo .csv, localizado no bucket Raw, foi processado no <b>EMR</b>, utilizando <b>Pyspark</b>, no Jupyter Notebook.<br>
