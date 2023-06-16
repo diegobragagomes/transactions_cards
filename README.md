@@ -126,15 +126,15 @@ Essa crescente inicial poderia ter se dado pelo avanço tecnológico tanto no se
 
 <br><img src = "./Images/9 - Valores totais gastos com flags de fraude, por ano-15_06_2023, 03_06_05.png" alt = "Gráfico 9"><br><br>
 
-. <br><br>
+Observa-se que os valores são mais altos próximos a 2007 e 2008, o que poderia ser vinculado ao assunto sobre a crise financeira. Contudo, é essencial salientar que os valores correspondem a uma mínima fração do volume de gastos durante o mesmo período de tempo.
+
+Logo, seria interessante avaliar mais a fundo especificamente os anos de maior pico e cruzar com os principais perfis avaliados, além de adquirir mais dados para se chegar ema alguma conclusão sobre a relação entre os gastos e fraudes e sua aparência quase cíclica.<br><br>
 
 ## Conclusão
 
-O projeto foi elaborado tendo a premissa de avaliar, a partir dos dados, a relação entre as utilizações, perfil e as estações, buscando entender melhor sobre possíveis melhoras em estratégias e ofertas de serviço. Para isso, foram utilizadas ferramentas, tais como <b>Pyspark, SQL, AWS, Metabase</b> para auxiliar na resposta desses questionamentos.
+O projeto foi elaborado tendo a premissa de avaliar, a partir dos dados, a relação entre os perfis de usuários de cartões e suas transações com as possíveis fraudes, buscando entender melhor sobre possíveis personas para lidar. Para isso, foram utilizadas ferramentas, tais como <b>Pyspark, SQL, AWS, Metabase</b> para auxiliar na resposta desses questionamentos.
 
-Após o trabalho com os dados e a análise, nota-se que o principal perfil dos usuários é de homens, inscritos, provavelmente utilizando para trabalho, entre 8-10 e 16-18, com utilizações maiores em períodos quentes (como final da primavera e verão), focados principalmente em 5 grandes estações, seja para partida ou para chegada. 
-
-Isso ajuda a entender o usuário atual, gerar personas melhores para o marketing e pensar em possíveis políticas e estratégicas de marketing, como a decisão de focar em ganhar um volume maior de usuárias femininas ou de tentar aumentar o público em horários de menor incidência de utilização através de campanhas de marketing mais efetivas ou descontos. Por final, mas não menos importantes, uma possível estratégia de um aumento de oferta nas principais estações de partida e chegada, dados os volumes apresentados.
+Após a análise dos dados e dos gráficos, as principais informações que se podem extrair são que dentre os <b>2000 usuários</b>, sua grande maioria é constituída de pessoas em fase ativa, entre 18 e 60 anos, onde a faixa também representa o maior grau de endividamento, porém com FICO Score em níveis médios ou bons. Isso pode, como foi dito, ser por conta de fatores sociais como alto nível de dívida por conta de financiamentos longos, comuns nos EUA. Além disso, o FICO Score, como observado anteriomente, seria possivelmente mais afetado pelo volume de transações e seus pagaemntos em dia no curto prazo, não sendo afetados por essas dívidas. Contrariamente, as pessoas mais velhas 
 
 Com o intuito de avançar com a ideia do projeto, poderia se gerar uma discussão e avaliar alguns indicadores (KPIs) para que fossem observados ao longo do tempo e que pudessem estar disponíveis em um dashboard, que poderia ser gerado no próprio Metabase (ou outra ferramenta de visualiação).
 
