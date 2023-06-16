@@ -7,7 +7,7 @@ O principal objetivo desse projeto é entender melhor o perfil da pessoa que efe
 Ao todo, o projeto foi separado em <b> 3 fases: </b>
 <li> Arquitetura dos dados </li>
 <li> Entendimento e Processamento dos Dados </li>
-<li> Análise dos Dados</li>
+<li> Análise dos Dados</li><br><br>
 
 ## Arquitetura dos Dados
 
@@ -25,7 +25,7 @@ Nessa etapa, o objetivo foi desenhar a arquitetura, isto é, o caminho pelo qual
 
 <li>Por último, a ferramenta de visualização escolhida foi o <b>Metabase</b>, pelo fato de ser open source e trabalhar com o <b>SQL</b>, que é uma ferramenta que também buscava desenvolver e expor. Para que o <b>Metabase</b> pudesse funcionar, foi utilizado o <b>Docker</b> e a partir da imagem metabase/metabase rodando na porta 3000 do localhost, houve a possibilidade de utilização dele. A conexão no <b>Metabase</b> é feita de maneira bastante simples, conectando ao database do <b>Redshift</b> e fazendo queries a partir dele.</li><br>
 
-Essa é uma arquitetura simples, mas cumpre o objetivo de se trabalhar quase inteiramente na nuvem, passando pelos processos de storage, processamento e disponibilização como um DW, pelo <b>Redshift</b>, até a conexão com a ferramenta de visualização, esta que poderia estar sendo utilizada num EC2, como um app no Elastic BeanStalk, numa app no Heruko, ou simplesmente na própria nuvem do <b>Metabase</b>, como seria o caso de uma versão online paga para o <b>Power BI</b>, <b>Tableau</b> e demais.
+Essa é uma arquitetura simples, mas cumpre o objetivo de se trabalhar quase inteiramente na nuvem, passando pelos processos de storage, processamento e disponibilização como um DW, pelo <b>Redshift</b>, até a conexão com a ferramenta de visualização, esta que poderia estar sendo utilizada num EC2, como um app no Elastic BeanStalk, numa app no Heruko, ou simplesmente na própria nuvem do <b>Metabase</b>, como seria o caso de uma versão online paga para o <b>Power BI</b>, <b>Tableau</b> e demais.<br><br>
 
 ## Entendimento e Processamento dos Dados
 
@@ -70,7 +70,7 @@ sd254_users:<br>
 cpi_index:<br>
     <li> Year : Ano </li>
     <li> Month : Mês</li>
-    <li> CPI_Index : Índice, onde 2015 = 100 </li>
+    <li> CPI_Index : Índice, onde 2015 = 100 </li><br><br>
 
 credit_card_transactions-ibm_v2:<br>
     <li> User_Index : ID do usuário </li>
@@ -91,22 +91,20 @@ credit_card_transactions-ibm_v2:<br>
     <li> Yearly Income - Person: Renda Anual do usuário </li>
     <li> Total Debt: Dívida Total</li>
     <li> FICO Score: Score do usuário na Instituição Financeira </li>
-    <li> Num Credit Cards: Número de cartões que o usuário possuiu ao longo dos anos </li><br><br>
+    <li> Num Credit Cards: Número de cartões que o usuário possuiu ao longo dos anos </li><br>
     
    
-   
-
 Sabendo-se disso, a arquivo .csv, localizado no bucket Raw, foi processado no <b>EMR</b>, utilizando <b>Pyspark</b>, no Jupyter Notebook.<br>
 
 Buscou-se apenas o mínimo para a possível visualização posterior, sendo verificada a existência de nulos, que comprovou que não havia nulos nessa tabela.<br>
 
 Depois, houve a alteração dos tipos de dados das colunas, já que algumas deveriam ser numéricas e outras no formato de timestamp, como no caso do starttime e stoptime. <br>
 
-Ao final dessa etapa, foi gerado um novo arquivo, nesse caso .parquet e ele foi salvo em outro bucket, chamado Curated.
+Ao final dessa etapa, foi gerado um novo arquivo, nesse caso .parquet e ele foi salvo em outro bucket, chamado Curated.<br><br>
 
 ## Análise dos Dados
 
-Com os dados disponíveis no <b> RedShift </b>, conecta-se ao <b> Metabase </b> e o foco se vira para a análise em si. Com isso, dentre as, aproximadamente, <b> 21,5 milhões </b> com uma taxa de <b> 0,02% de fraude </b>,<b> 2000 diferentes usuários</b> e <b> 6146 cartões utilizados no deccorer dos anos</b>, alguns cruzamentos entre os dados foram realizados para bucar extrair informações relevantes, entre eles: <br>
+Com os dados disponíveis no <b> RedShift </b>, conecta-se ao <b> Metabase </b> e o foco se vira para a análise em si. Com isso, dentre as, aproximadamente, <b> 21,5 milhões </b> com uma taxa de <b> 0,02% de fraude </b>,<b> 2000 diferentes usuários</b> e <b> 6146 cartões utilizados no deccorer dos anos</b>, alguns cruzamentos entre os dados foram realizados para bucar extrair informações relevantes, entre eles: <br><br>
 
 <b>1 - Quantidade de usuários pela Idade Atual</b>
 
