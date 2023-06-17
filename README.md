@@ -170,6 +170,20 @@ Observa-se que os valores são mais altos próximos a 2007 e 2008, o que poderia
 
 Logo, seria interessante avaliar mais a fundo especificamente os anos de maior pico e cruzar com os principais perfis avaliados, além de adquirir mais dados para se chegar ema alguma conclusão sobre a relação entre os gastos e fraudes e sua aparência quase cíclica.<br><br>
 
+<b>10 - Taxa de Fraude nas Transações pelo MCC (Merchant category codes - Atividade do Negócio)</b>
+
+<br><img src = "./Images/Taxa de Fraude nas Transações por MCC-17_06_2023, 00_35_02.png" alt = "Gráfico 10"><br><br>
+
+O gráfico demonstra as 10 principais atividades econômicas que os estabelecimentos mais envolvidos em transações fraudulentas atuam. De acordo com o <a href= "https://www.citibank.com/tts/solutions/commercial-cards/assets/docs/govt/Merchant-Category-Codes.pdf">Guia de MCC do Citibank</a>, pode-se notar que os dois primeiros correspondem respectivamente a Jogos Eletrônicos e Lojas de Instrumentos Musicais, seguidos por lojas de objetos para casa; computadores e periféricos; e pedras preciosas, relógios e jóias.
+
+O resultado se mostra anti-intuitivo, visto que a expectativa comum é a de lojas de roupas, outlets, pelo maior volume. Contudo, é interessante analisar que em relação a área de jogos eletrônicos, a taxa de fraude em relação as transações totais ultrapassa os 10%, o que quer dizer que uma em cada dez transações se mostra fraudulenta.<br><br>
+
+<b>11 - Taxa de Fraude nas Transações pelo Estado do Estabelecimento</b>
+
+<br><img src = "./Images/Taxa_de_fraude_por_estado.png" alt = "Gráfico 11"><br><br>
+
+Essa é uma demonstração em relação ao total de transações, o que justifica os valores percentualmente tão baixos. Contudo, a massa quantitativa que separa em contabilização os diferentes estados segue a mesma tendência de distribuição, o que se leva ao entendimento que Ohio, ALaska, Havaí e Nebraska são 4 dos estados com maior volume de transações que sofreram alguma fraude. <br><br>
+
 ## Conclusão
 
 O projeto foi elaborado tendo a premissa de avaliar, a partir dos dados, a relação entre os perfis de usuários de cartões e suas transações com as possíveis fraudes, buscando entender melhor sobre possíveis personas para lidar. Para isso, foram utilizadas ferramentas, tais como <b>Pyspark, SQL, AWS, Metabase</b> para auxiliar na resposta desses questionamentos.
@@ -179,6 +193,8 @@ Após a análise dos dados e dos gráficos, as principais informações que se p
 Ademais, o volume de gastos passou por um grande crescimento e depois de 2011 vem passando por pequenas quedas, porém constantes. Com tudo isso, destaca-se que como uma possível empresa que cuidaria dessas transações, seria interessante separar certas personas, como a pessoa mais velha que não tem muito volume de gastos, porém sofre com maior número de fraudes. Diferentemente desse caso, o jovem de 18 a 30 anos, principalmente, possui grande volume de transações, baixo nível de fraude, contudo uma alta dívida. 
 
 A partir disso, para os mais novos, o cuidado deveria ser a observação do pagamento constante, porque já que possui um grande grau de endividamento, se começar a crescer uma dívida, a pessoa endividada entrará num processo de "bola de neve" e dificilmente conseguirá arcar com os compromissos futuros. No caso dos mais velhos, a atenção é distinta, eles possuem bom grau de endividamento, então o problema anterior não é tão relevante, porém as transações por si mereceriam maior atenção pelo alto grau de fraude. Outros perfis poderiam ser igualmente criados, de acordo com as diferentes faixas.
+
+Há a importância de se salientar os principais estados atribuídos ao maior volume de transações com fraude e ainda as principais atividades envolvidas, o que ajuda a observar com mais atenção esses setores, buscando entender pontos de falhas especificas que podem ocorrer. Em relação a região geográfica, demonstra-se essencial entender quais os principais pontos que levou esses estados a esses números, ainda mais porque eles não são geograficamente próximos, podem ter divergências culturais fortes e diferentes políticas, então o entendimento mais profundo se faz necessário.
 
 Com o intuito de avançar com a ideia do projeto, poderia se gerar uma discussão e avaliar alguns indicadores (KPIs) para que fossem observados ao longo do tempo e que pudessem estar disponíveis em um dashboard, que poderia ser gerado no próprio Metabase (ou outra ferramenta de visualiação).
 
