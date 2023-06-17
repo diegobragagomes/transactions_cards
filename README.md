@@ -7,7 +7,13 @@ O principal objetivo desse projeto é entender melhor o perfil da pessoa que efe
 Ao todo, o projeto foi separado em <b> 3 fases: </b>
 <li> Arquitetura dos dados </li>
 <li> Entendimento e Processamento dos Dados </li>
-<li> Análise dos Dados</li><br><br>
+<li> Análise dos Dados</li><br>
+
+Principais Ferramentas:
+<li><b>AWS</b></li>
+<li> <b>Pyspark</b></li>
+<li><b>SQL</b></li>
+<li><b>Metabase</b></li><br>
 
 ## Arquitetura dos Dados
 
@@ -174,7 +180,7 @@ Logo, seria interessante avaliar mais a fundo especificamente os anos de maior p
 
 <br><img src = "./Images/Taxa de Fraude nas Transações por MCC-17_06_2023, 00_35_02.png" alt = "Gráfico 10"><br><br>
 
-O gráfico demonstra as 10 principais atividades econômicas que os estabelecimentos mais envolvidos em transações fraudulentas atuam. De acordo com o <a href= "https://www.citibank.com/tts/solutions/commercial-cards/assets/docs/govt/Merchant-Category-Codes.pdf">Guia de MCC do Citibank</a>, pode-se notar que os dois primeiros correspondem respectivamente a Jogos Eletrônicos e Lojas de Instrumentos Musicais, seguidos por lojas de objetos para casa; computadores e periféricos; e pedras preciosas, relógios e jóias.
+O gráfico demonstra as 10 principais atividades econômicas que os estabelecimentos mais envolvidos em transações fraudulentas atuam. De acordo com o <a href= "https://www.citibank.com/tts/solutions/commercial-cards/assets/docs/govt/Merchant-Category-Codes.pdf">Guia de MCC do Citibank</a>, pode-se notar que os dois primeiros correspondem respectivamente a <b>Jogos Eletrônicos e Lojas de Instrumentos Musicais, seguidos por lojas de objetos para casa; computadores e periféricos; e pedras preciosas, relógios e jóias</b>.<br>
 
 O resultado se mostra anti-intuitivo, visto que a expectativa comum é a de lojas de roupas, outlets, pelo maior volume. Contudo, é interessante analisar que em relação a área de jogos eletrônicos, a taxa de fraude em relação as transações totais ultrapassa os 10%, o que quer dizer que uma em cada dez transações se mostra fraudulenta.<br><br>
 
@@ -182,7 +188,7 @@ O resultado se mostra anti-intuitivo, visto que a expectativa comum é a de loja
 
 <br><img src = "./Images/Taxa_de_fraude_por_estado.png" alt = "Gráfico 11"><br><br>
 
-Essa é uma demonstração em relação ao total de transações, o que justifica os valores percentualmente tão baixos. Contudo, a massa quantitativa que separa em contabilização os diferentes estados segue a mesma tendência de distribuição, o que se leva ao entendimento que Ohio, ALaska, Havaí e Nebraska são 4 dos estados com maior volume de transações que sofreram alguma fraude. <br><br>
+Essa é uma demonstração em relação ao total de transações, o que justifica os valores percentualmente tão baixos. Contudo, a massa quantitativa que separa em contabilização os diferentes estados segue a mesma tendência de distribuição, o que se leva ao entendimento que <b>Ohio, ALaska, Havaí e Nebraska</b> são 4 dos estados com maior volume de transações que sofreram alguma fraude. <br><br>
 
 ## Conclusão
 
