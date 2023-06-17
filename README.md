@@ -92,11 +92,15 @@ credit_card_transactions-ibm_v2:<br>
    
 Sabendo-se disso, a arquivo .csv, localizado no bucket Raw, foi processado no <b>EMR</b>, utilizando <b>Pyspark</b>, no Jupyter Notebook.<br>
 
-Buscou-se apenas o mínimo para a possível visualização posterior, sendo verificada a existência de nulos, que comprovou que não havia nulos nessa tabela.<br>
+Buscou-se apenas o mínimo para a possível visualização posterior, sendo verificada a existência de nulos, que comprovou que havia nulos na tabela sd254_users, na coluna Apartment (cerca de 75%), e na tabela credit_card_transactions-ibm_v2, na coluna Errors (cerca de 90%). Essas colunas foram dropadas.<br>
 
-Depois, houve a alteração dos tipos de dados das colunas, já que algumas deveriam ser numéricas e outras no formato de timestamp, como no caso do starttime e stoptime. <br>
+Encontrou-se, também, a existência de valores nulos, cerca de 11%, nas colunas Merchant State e Zip da tabela credit_card_transactions-ibm_v2. Nesses casos, os valores nulos foram eliminados, mantendo as colunas. <br>
 
-Ao final dessa etapa, foi gerado um novo arquivo, nesse caso .parquet e ele foi salvo em outro bucket, chamado Curated.<br><br>
+Após isso, os nomes das colunas foram corrigidos, já que eles vieram com espaços e/ou outros caracteres que podem causar certos problemas no decorrer do processo.<br>
+
+Depois, houve a alteração dos tipos de dados das colunas, já que algumas deveriam ser numéricas e outras no formato de date ou timestamp. <br>
+
+Ao final dessa etapa, foi gerado um novo arquivo para cada tabela, nesse caso .parquet e ele foi salvo em outro bucket, chamado Curated.<br><br>
 
 ## Análise dos Dados
 
