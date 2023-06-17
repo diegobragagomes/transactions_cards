@@ -21,7 +21,7 @@ Nessa etapa, o objetivo foi desenhar a arquitetura, isto é, o caminho pelo qual
 
 <img src = "./Images/Arquitetura.png" alt = "Arquitetura de Dados">
 
-<li> Tudo se inicia com o download dos dados do case <a href="https://www.kaggle.com/datasets/ealtman2019/credit-card-transactions?select=credit_card_transactions-ibm_v2.csv">Card Transaction</a> no Kaggle e o download do .csv do <a href = "https://data.bls.gov/cgi-bin/surveymost?bls"> CPI Index (CPI-U)</a> entre 1988 e 2020. </li><br>
+<li> Tudo se inicia com o download dos dados do case <a href="https://www.kaggle.com/datasets/ealtman2019/credit-card-transactions?select=credit_card_transactions-ibm_v2.csv">Card Transaction</a> no Kaggle e o download do .csv do <a href = "https://data.bls.gov/cgi-bin/surveymost?bls"> CPI Index (CPI-U) [1982-84=100]</a> entre 1988 e 2020. </li><br>
 
 <li>Após isso, os dados são inseridos em um bucket, chamado de Raw, no <b>S3</b> dentro da AWS. Esses dados chegarão brutos, em .csv, e serão processados pelo <b>EMR</b> (Elastic Map Reduce) e serão salvos em .parquet em outro bucket no <b>S3</b>, chamado de Curated.</li><br>
 
