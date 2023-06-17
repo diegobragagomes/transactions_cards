@@ -170,7 +170,7 @@ Essa crescente inicial poderia ter se dado pelo avanço tecnológico tanto no se
 
 <b>9 - Valores Totais Gastos, que tiveram seus cartões em algum problema com fraude, por Ano</b>
 
-<br><img src = "./Images/9 - Valores totais gastos com flags de fraude, por ano-15_06_2023, 03_06_05.png" alt = "Gráfico 9"><br><br>
+<br><img src = "./Images/9 - Valores totais gastos com flags de fraude, por ano-15_06_2023, 03_06_05.png" alt = "Gráfico 9"><br>
 
 Observa-se que os valores são mais altos próximos a 2007 e 2008, o que poderia ser vinculado ao assunto sobre a crise financeira. Contudo, é essencial salientar que os valores correspondem a uma mínima fração do volume de gastos durante o mesmo período de tempo.
 
@@ -178,7 +178,7 @@ Logo, seria interessante avaliar mais a fundo especificamente os anos de maior p
 
 <b>10 - Taxa de Fraude nas Transações pelo MCC (Merchant category codes - Atividade do Negócio)</b>
 
-<br><img src = "./Images/Taxa de Fraude nas Transações por MCC-17_06_2023, 00_35_02.png" alt = "Gráfico 10"><br><br>
+<br><img src = "./Images/Taxa de Fraude nas Transações por MCC-17_06_2023, 00_35_02.png" alt = "Gráfico 10"><br>
 
 O gráfico demonstra as 10 principais atividades econômicas que os estabelecimentos mais envolvidos em transações fraudulentas atuam. De acordo com o <a href= "https://www.citibank.com/tts/solutions/commercial-cards/assets/docs/govt/Merchant-Category-Codes.pdf">Guia de MCC do Citibank</a>, pode-se notar que os dois primeiros correspondem respectivamente a <b>Jogos Eletrônicos e Lojas de Instrumentos Musicais, seguidos por lojas de objetos para casa; computadores e periféricos; e pedras preciosas, relógios e jóias</b>.<br>
 
@@ -186,7 +186,7 @@ O resultado se mostra anti-intuitivo, visto que a expectativa comum é a de loja
 
 <b>11 - Taxa de Fraude nas Transações pelo Estado do Estabelecimento</b>
 
-<br><img src = "./Images/Taxa_de_fraude_por_estado.png" alt = "Gráfico 11"><br><br>
+<br><img src = "./Images/Taxa_de_fraude_por_estado.png" alt = "Gráfico 11"><br>
 
 Essa é uma demonstração em relação ao total de transações, o que justifica os valores percentualmente tão baixos. Contudo, a massa quantitativa que separa em contabilização os diferentes estados segue a mesma tendência de distribuição, o que se leva ao entendimento que <b>Ohio, ALaska, Havaí e Nebraska</b> são 4 dos estados com maior volume de transações que sofreram alguma fraude. <br><br>
 
